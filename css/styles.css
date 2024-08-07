@@ -1,0 +1,1705 @@
+
+/* Enlaces con fuentes externas */
+@font-face {
+    font-family: 'cross_boxed';
+    src: url(../fonts/cross_boxed/Cross\ Boxed.ttf);
+}
+@font-face {
+    font-family: 'red_hat_text';
+    src: url(../fonts/Red_Hat_Text/static/RedHatText-Bold.ttf);
+    src: url(../fonts/Red_Hat_Text/static/RedHatText-Regular.ttf);
+    src: url(../fonts/Red_Hat_Text/static/RedHatText-Medium.ttf);
+    src: url(../fonts/Red_Hat_Text/static/RedHatText-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'red_hat_text_regular';
+    src: url(../fonts/Red_Hat_Text/static/RedHatText-Regular.ttf);
+}
+@font-face {
+    font-family: 'red_hat_text_medium';
+    src: url(../fonts/Red_Hat_Text/static/RedHatText-Medium.ttf);
+}
+@font-face {
+    font-family: 'zt_talk';
+    src: url(../fonts/zt_talk/ZTTalk-Bold.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 122.5rem;
+}
+header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: absolute;
+} 
+
+
+
+/* navigation class styles */
+.navigation{
+    width: 100%;
+    top:0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    justify-content: space-between;
+    padding: 1.0rem 2.5rem;
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.nav-list li{
+    border-bottom: 2px solid #fff;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'red_hat_text', sans-serif;
+    font-size: 15px;
+    transition: .5s;
+}
+/* nav styles and hamburger menu styles */
+.nav{
+    width: 60%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    padding: 5rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+}
+
+.close{
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 0 0 0 7.0rem;
+    cursor: pointer;
+}
+.fa-times{
+    font-size: 24px;
+}
+
+.open{
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.fa-bars{
+    font-size: 24px;
+}
+
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list{
+    flex-direction: column;
+    align-items: start;
+}
+.nav-list a:hover{
+    color: #FF0000;
+}
+/* End of the nav styles and hamburguer menu */
+
+/* Styles of section content */
+
+section{
+    overflow: hidden;
+}
+
+.content-banner{
+    background: url(../images/Header\ Background.jpg) center no-repeat;
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+}
+.content{
+    margin-top: 18.0rem;
+}
+.content h1{
+    font-size: 50px;
+    font-family: 'cross_boxed';
+    color: #fff;
+    margin-bottom: 7.1rem;
+}
+.content p{
+    color: #fff;
+    font-family: 'zt_talk';
+    font-size: 30px;
+    margin-bottom: 6.6rem;
+}
+/* end Styles of section content*/
+
+/*Styles of button inscribete Ya!*/
+.inscrip-btn{
+    background-color: #FF0000;
+    padding: 15px 50px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'red_hat_text', sans-serif;
+    font-size: 15px;
+    transition: .4s;
+}
+.inscrip-btn:hover{
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, .25);
+    background: linear-gradient(180deg, #ff0000 7.78%, #000 141.12%);
+}
+/* end Styles of button inscribete Ya!*/
+
+/*Styles of Social Network icons and text*/
+.social-net{
+    text-align: center;
+    margin-top: 10.0rem;
+}
+
+.social-net a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    margin-right: 2.0rem;
+}
+.social-net i{
+    font-size: 24px;
+    transition: .5s;
+}
+.sn-text{
+    margin-left: .5rem;
+    font-size: 12px;
+    font-family: 'zt_talk';
+}
+/* end Styles of Social network icons and text*/
+
+/*Styles of section sobreNosotros*/
+.sobreNosotros{
+    width: 100%;
+    height: 165vh;
+    background: url(../images/Sobre_Nosotros_Background.jpg) no-repeat center;
+    background-size: cover;
+}
+.sobreNosotros h2{
+    text-align: center;
+    color: #fff;
+    font-family: 'Red_hat_Text';
+    font-size:50px;
+}
+.h2-sn{
+    background: rgba(225, 0, 0, .5);
+    margin-top: 1.0rem;
+    padding: 1.0rem;
+    margin-bottom: 2.0rem;
+}
+.image-sn{
+    margin-top: 2,0rem;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.sobreNosotros-text{
+    max-width: 38.0rem;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 1.0rem ;
+    margin-top: 1.2rem;
+}
+.sobreNosotros-text p{
+    color: #fff;
+    font-family: 'red_hat_text', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+/*Styles fechas*/
+
+.fechas{
+    margin: 0 auto;
+    background:url(../images/section_fechas_background.jpg) no-repeat center ;
+    background-size: cover;
+    height: 30.8rem;
+    text-align: center;
+}
+
+.fechas-info h2{
+    color: #fff;
+    font-size: 45px;
+    font-family: 'red_hat_text',sans-serif;
+}
+
+.text-color{
+    color: #ff0000;
+    font-size: 45px;
+    font-family: 'red_hat_text', sans-serif;
+}
+.fechas-info{
+    margin-top: 3.0rem;
+}
+.parrafo-fechas{
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 3.0rem;
+    max-width: 40.0rem;
+    font-family: 'red_hat_text', sans-serif;
+    font-size:25px;
+}
+.button-inscription{
+    margin-top: 3.2rem;
+}
+
+/*End of styles fechas*/
+
+/* styles .info-ru */
+
+.info-rut{
+    width: 100%;
+    height: 230vh;
+    background: url(../images/Rutas\ background.jpg) no-repeat center;
+    background-size: cover;
+}
+.info-ruta-content{
+    display: flex;
+    flex-direction: column;
+}
+.competencia{
+    max-width: 28.1rem;
+    margin: 0 auto;
+    margin-top: 2.0rem;
+}
+.arrow-icon{
+    text-align: center;
+}
+
+.title-rut{
+    color: #fff;
+    font-family: 'zt_talk';
+    font-size: 32px;
+}
+.nombre-comp{
+    color: #fff;
+    font-family: 'zt_talk';
+    font-size: 32px;
+    max-width: 30.0rem;
+}
+.comp-km{
+    color: #fff;
+    font-family: 'zt_talk';
+    font-size: 32px;
+}
+.comp-date{
+    color: #fff;
+    font-family: 'zt_talk';
+    font-size: 32px;
+}
+/* end of styles .info-ru */
+
+/* styles Recorridos rutas */
+.rutas-content{
+    width: 100%;
+    height: 260vh;
+    background-color: #000;
+    margin: 0 auto;
+}
+.rutas-head{
+    margin-top: 3.3rem;
+    text-align: center;
+
+}
+.rutas-head h2{
+    color: #fff;
+    font-family: 'cross_boxed', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.rutas-head p{
+    color: #fff;
+    font-family: 'red_hat_text', sans-serif;
+    font-size: 13px;
+    max-width: 35.0rem;
+    margin: 0 auto;
+}
+
+.ruta-dia{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.imagen-ruta{
+    border-radius: 15px;
+    border: 2px solid #ff0000;
+    margin: 0 auto;
+}
+.ruta-title{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'cross_boxed', sans-serif;
+    margin: 2.0rem 0;
+}
+.ruta-dia{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'cross_boxed', sans-serif;
+    margin-top: 2.0rem;
+}
+/* end of styles Recorridos rutas */
+
+/* Section Premios styles */
+.premios{
+    background: url(../images/Premios\ background.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 310vh;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+}
+.premios-title{
+    color: #fff;
+    font-family: 'cross_boxed', sans-serif;
+    font-size: 50px;
+    margin-top: 2.0rem;
+}
+
+/* styles hover premios */
+/*hover premio-box-1 hover*/
+.premio-box{
+    width: 30.0rem;
+    height: 30.0rem;
+    background-color: #000;
+    border-radius: 2.0rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.0rem;
+    overflow: hidden;
+}
+
+.premio-box::before{
+    content: 'Premio 1er Lugar';
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'red_hat_text', sans-serif;
+    max-width: 13.1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease-in-out;
+}
+.premio-box::after{
+    content: '$100K + una bicicleta valorada en $12K';
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'red_hat_text', sans-serif;
+    max-width: 20.0rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .2s ease-in-out;
+    opacity: 0;
+}
+.premio-box:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+.premio-box:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+/*End hover premio-box-1*/
+/*premio-box-2 hover*/
+.premio-box-2{
+    width: 30.0rem;
+    height: 30.0rem;
+    background-color: #000;
+    border-radius: 2.0rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.0rem;
+    overflow: hidden;
+}
+.premio-box-2::before{
+    content: 'Premio 2do Lugar';
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'red_hat_text', sans-serif;
+    max-width: 13.1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease-in-out;
+}
+.premio-box-2::after{
+    content: '$70k Además de cupones de marcas patrocinadoras de la competencia.';
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'red_hat_text', sans-serif;
+    max-width: 20.0rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .2s ease-in-out;
+    opacity: 0;
+}
+.premio-box-2:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+.premio-box-2:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+/* end premio-box-2 hover */
+/*premio-box-3 hover*/
+.premio-box-3{
+    width: 30.0rem;
+    height: 30.0rem;
+    background-color: #000;
+    border-radius: 2.0rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.0rem;
+    overflow: hidden;
+}
+.premio-box-3::before{
+    content: 'Premio 3cer Lugar';
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'red_hat_text', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease-in-out;
+}
+.premio-box-3::after{
+    content: '$50K + un paquete de inscripción premium para el siguiente año.';
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'red_hat_text', sans-serif;
+    max-width: 20.0rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .2s ease-in-out;
+    opacity: 0;
+}
+.premio-box-3:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+.premio-box-3:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+/*end premio-box-3 hover*/
+/*premio-box-4 hover*/
+.premio-box-4{
+    width: 30.0rem;
+    height: 30.0rem;
+    background-color: #000;
+    border-radius: 2.0rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.0rem;
+    overflow: hidden;
+}
+.premio-box-4::before{
+    content: 'Premio 4to Lugar';
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'red_hat_text', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease-in-out;
+}
+.premio-box-4::after{
+    content: '$25K + 3 cupones de 3 de nuestros patrocinadores.';
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'red_hat_text', sans-serif;
+    max-width: 20.0rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .2s ease-in-out;
+    opacity: 0;
+}
+.premio-box-4:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+.premio-box-4:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+/*end premio-box-4 hover*/
+/*premio-box-5 hover*/
+.premio-box-5{
+    width: 30.0rem;
+    height: 30.0rem;
+    background-color: #000;
+    border-radius: 2.0rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.0rem;
+    overflow: hidden;
+}
+.premio-box-5::before{
+    content: 'Premio 5to Lugar';
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'red_hat_text', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease-in-out;
+}
+.premio-box-5::after{
+    content: '$10K + una inscripción para el siguiente año.';
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'red_hat_text', sans-serif;
+    max-width: 20.0rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .2s ease-in-out;
+    opacity: 0;
+}
+.premio-box-5:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+.premio-box-5:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+/*end premio-box-5 hover*/
+
+.premio-box-6{
+    width: 30.0rem;
+    height: 30.0rem;
+    background-color: #000;
+    border-radius: 2.0rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.0rem;
+    overflow: hidden;
+}
+.premio-box-6::before{
+    content: 'Rifas para todos los participantes';
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'red_hat_text', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease-in-out;
+}
+.premio-box-6::after{
+    content: 'Tendremos más de $10K en premios para todos los participantes + una bicicleta cannondale scalpel valorada en $7K.';
+    color: #fff;
+    font-size: 2.0rem;
+    font-family: 'red_hat_text', sans-serif;
+    max-width: 20.0rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .2s ease-in-out;
+    opacity: 0;
+}
+.premio-box-6:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+.premio-box-6:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}  
+/*End premio-box-5 hover*/
+
+/* styles of section paquetes */
+.paquetes{
+    width: 100%;
+    height: 355vh;
+    background: #000;
+    margin: 0 auto;
+}
+.paquetes-box{
+    width: 31.0rem;
+    height: 70.0rem;
+    margin: 0 auto;
+    border: 1px solid #FF0000;
+    border-radius: 2.0rem;
+    margin-bottom: 2.0rem;
+}
+.paquetes-head h2{
+    margin: 2.0rem 0;
+    font-family: 'cross_boxed', sans-serif;
+    font-size: 50px;
+    background: linear-gradient(90deg, #FFF 0.01%, #F00 141.69%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.paquetes-info{
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+.paquetes-info h3{
+    font-family: 'zt_talk',sans-serif;
+    font-size: 60px;
+    line-height: 1.3;
+}
+.paquetes-info p{
+    font-family: 'zt_talk',sans-serif;
+    font-size: 4.0rem;
+}
+
+.gradient{
+    font-size: 4.0rem;
+    background: linear-gradient(90deg, #FFF 0.01%, #F00 141.69%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.paquetes-list{
+    color: #FFF;
+    display: flex;
+    max-width: 19.1rem;
+    margin: 0 auto;
+    margin-top: 2.0rem;
+}
+.paquetes-list ul li{
+    font-size: 1.8rem;
+    font-family: 'zt_talk', sans-serif;
+    max-width: 27.1rem;
+    margin-bottom: 1.0rem;
+}
+.button-inscription-paquetes{
+    margin: 0 auto;
+    margin-top: 2.0rem;
+    display: flex;
+    justify-content: center;
+}
+/* end styles of section paquetes */
+
+/* styles of section patrocinadores */
+.patrocinadores{
+    background-color: #1f1f1f;
+    height: 40vh;
+}
+.slider-patrocinadores{
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider-patrocinadores h2{
+    color: #FFF;
+    font-size: 5.0rem;
+    font-family: 'red_hat_text',sans-serif;
+    text-align: start;
+}
+.slider-patrocinadores .slide-track{
+    display: inline-flex;
+    flex-direction: row;
+    animation: scroll 40s linear infinite;
+    width: calc( 19.5rem * 26);
+    align-items: center;
+}
+.slider-patrocinadores .slide{
+    width: 19.5rem;
+}
+.slider-patrocinadores .slide img{
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-19.5rem * 7));
+    }
+}
+/* end styles of section patrocinadores */
+
+/* styles of section jersey */
+.jersey{
+    margin: 0 auto;
+    background-color: #000;
+    width: 100%;
+    height: 295vh;
+}
+.jersey h2{
+    color: #FFF;
+    text-align: center;
+    font-family: 'cross_boxed', sans-serif;
+    font-size: 5.0rem;
+    margin-top: 2.0rem;
+}
+.jersey h3{
+    text-align: center;
+    color: #FFF;
+    font-family: 'red_hat_text', sans-serif;
+    font-size: 3.0rem;
+    margin-bottom: 2.0rem;
+}
+.content-jersey{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.image-jersey{
+    margin: 0 auto;
+}
+.conseguir{
+    text-align: center;
+    color: #FFF;
+    font-family: 'red_hat_text', sans-serif;
+    font-size: 1.3rem;
+}
+/* end styles of section jersey */
+
+/* styles of section eventos */
+
+.eventos{
+    background-color: #000;
+    margin: 0 auto;
+    width: 100%;
+    height: 385vh;
+}
+.eventos h2{
+    color: #FFF;
+    font-size: 5.0rem;
+    font-family: 'cross_boxed', sans-serif;
+    text-align: center;
+    margin-top: 2.0rem;
+    margin-bottom: 2.0rem;
+}
+.eventos-content img{
+    margin-bottom: 5.0rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+/* end styles of section eventos */
+
+/* styles of section hospedajes and Hover */
+.hospedajes{
+    background-color: #000;
+    width: 100%;
+    height: 340vh;
+}
+.hospedajes h2{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 3.0rem;
+    font-family: 'cross_boxed';
+    font-size: 5.0rem;
+    margin-top: 2.0rem;
+}
+.hospedajes_container{ /*===== Contenedor de todos los hospedajes =====*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.hospedaje-content a{
+    text-decoration: none;
+}
+.hospedaje-content h3{
+    color: #FFF;
+    font-family: 'red_hat_text', sans-serif;
+    font-size: 2.0rem;
+    margin-top: .9rem;
+}
+.hospedaje-content{
+    margin: 0 auto;
+    margin-bottom: 2.0rem;
+}
+.hospedaje-content figure{
+    position: relative;
+    overflow: hidden;
+}
+.hospedaje-content figure .capa{
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, .6);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+} 
+.capa p{
+    color: #FFF;
+    font-family: 'red_hat_text', sans-serif;
+    font-size: 2.0rem;
+    transition: all 400ms ease-out;
+    margin-top: 13.0rem;
+}
+.hospedaje-hover p{
+    margin-bottom: 100px;
+}
+.hospedaje-content figure:hover .capa{
+    opacity: 1;
+    visibility: visible;
+}
+/* end styles of section hospedajes */
+
+/* styles of section inscription form */
+.inscripciones-form{
+    margin: 0 auto;
+    width: 100%;
+    height: 160vh;
+    background: url(../images/Form\ inscription\ Background.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+}
+.inscripciones-form h2{
+    color: #FFF;
+    font-family: 'cross_boxed', sans-serif;
+    text-align: center;
+    font-size: 5.0rem;
+    margin-top: 2.0rem;
+}
+.form-content{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.0rem;
+    margin-left: 1.5rem;
+}
+label{
+    color: #FFF;
+    font-family: 'red_hat_text', sans-serif;
+    font-size: 2.5rem;
+}
+input, .input{
+    width: 95%;
+    margin: 0 auto;
+    background-color: transparent;
+    border:2px solid #FFF;
+    border-radius: 1.0rem;
+    font-family: 'red_hat_text', sans-serif;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 2.0rem 5.0rem 2.0rem 2.0rem;
+    margin-bottom: 7.0rem;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+.dropdown-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+select{
+    background-color: transparent;
+    color:#fff ;
+    font-family: 'red_hat_text_regular', sans-serif;
+    font-size: 2.5rem;
+    padding:2.4rem 2.7rem;
+}
+option{
+    font-size: 1.2rem;
+    color: #000;
+}
+.tallas{
+    width: 14.8rem;
+    border-radius: 1.0rem;
+    border: 2px solid #fff;
+}
+.tallas-box{
+    margin-right: 2.0rem;
+    display: flex;
+    flex-direction: column;
+}
+.compes-box{
+    display: flex;
+    flex-direction: column;
+}
+.compes-box label{
+    text-align: center;
+}
+.tallas-compes{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.inscrip-submit{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.0rem;
+}
+
+/*====================== Styles od Alert when the submit button is clicked ====================*/
+.titleAlert{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'red_hat_text', sans-serif;
+}
+.textAlert{
+    color: #FFF;
+    font-size: 15px;
+    font-family: 'red_hat_text', sans-serif;
+}
+.textButton{
+    font-size: 2.0rem;
+    font-family: 'red_hat_text', sans-serif;
+}
+/*====================== end Styles od Alert when the submit button is clicked ====================*/
+
+/* end styles of section Inscription form */
+
+/* styles of section Contactanos */
+.contactanos{
+    margin: 0 auto;
+    background: #000;
+    width: 100%;
+    height: 110vh;
+}
+.contactanos h2{
+    color: #FFF;
+    text-align: center;
+    font-family: 'cross_boxed', sans-serif;
+    font-size: 4.0rem;
+    margin-top: 2.0rem;
+}
+.contact-form{
+    margin-top: 2.0rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-form label{
+    margin-left: 1.5rem;
+}
+.quejas-sugerencias{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.quejas-sugerencias label{
+    margin-left: 1.5rem;
+}
+.quejas-sugerencias textarea{
+    width: 95%;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-family: 'red_hat_text',sans-serif;
+    border: 2px solid #fff;
+    padding: 2.0rem 2.5rem 7.0rem 2.0rem;
+    border-radius: 1.0rem;
+    margin: 0 auto;
+}
+/* End styles of section Contactanos */
+
+/* styles of Footer */
+footer{
+    margin: 0 auto;
+    background-color: #000;
+    display: flex;
+    border-top: 1px solid #FFF;
+    height: 36.0rem;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: right;
+}
+.social-footer{
+    margin: 0 auto;
+    margin-top: 4.0rem;
+}
+.contactos-footer p{
+    color: #FFF;
+    font-family: 'red_hat_text', sans-serif;
+    font-size: 12px;
+}
+.logo-dev{
+    display: flex;
+}
+.logo-dev p{
+    color: #FFF;
+    font-family: 'red_hat_text', sans-serif;
+    display: inline-flex;
+    align-items: flex-end;
+}
+.copyright{
+    margin: 0 auto;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
+}
+.copyright p{
+    font-size: 15px;
+    font-family: 'red_hat_text', sans-serif;
+}
+
+
+@media screen and (min-width: 900px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 122.5rem;
+    }
+    /*=============================== Mediaquerys de navigation en 900px =====================*/
+    .nav-list{
+        position: initial;
+        width: initial;
+        height: initial;
+        justify-content: initial;
+        flex-direction: row;
+        padding: 0;
+        align-items: initial;
+    }
+    .navigation{
+        position: fixed;
+        justify-content: space-between;
+        width: 100%;
+        height: initial;
+        top: initial;
+        left: 0;
+        padding: 0 8.0rem;
+
+    }
+    .nav{
+        position: initial;
+        visibility: visible;
+        width: initial;
+        height: initial;
+        flex-direction: row;
+        opacity: initial;
+        justify-content: space-between;
+        background: initial;
+        box-shadow: none;
+    }
+    .close-btn{
+        display: none;
+    }
+    .open{
+        display: none;
+    }
+    .nav.visible{
+        display: none;
+    }
+    /*========================= Fin de Mediaquerys de navigation en 900px ================*/
+
+    /*=================== Mediaquerys de section banner content en 900px ==================*/
+    .content-banner{
+        height: 100vh;
+    }
+    .content{
+        margin-top:15.0rem;
+    }
+    .content h1{
+        font-size: 100px;
+        margin-bottom: .9rem;
+    }
+    .content p{
+        font-size: 40px;
+        margin-bottom: rem;
+    }
+    .social-net{
+        margin-top: 5.0rem;
+    }
+    /*=================== fin Mediaquerys de section banner content en 900px ==================*/
+
+    /*=================== Mediaquery de sobre Nosotros en 900px ===========================*/
+    section{
+        width: 100%;
+        height: 100vh;
+    }
+    .sobreNosotros{
+        height: 120vh;
+    }
+    .sn-content{
+        display: flex;
+        align-items: center;
+        margin-top: 2.0rem;
+        align-items: center;
+    }
+    .image-sn{
+        margin-top: 2,0rem;
+        margin: 0 auto;
+        justify-content: initial;
+        width: 500px;
+        height: 600px;
+        /* margin-bottom: 2.0rem; */
+    }
+    .image-sn img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .sobreNosotros-text{
+        max-width: 50.0rem;
+        border: 3px solid #fff;
+        border-radius: 20px;
+        padding: 1.5rem ;
+        margin-top: initial;
+    }
+    .sobreNosotros p{
+        font-size: 20px;
+    }
+    /*===================== fin Mediaquerys de Sobre Nosotros en 900px ===============*/
+    /*===================== Mediaquerys de Info rutas en 900px =======================*/
+    .info-rut{
+        width: 100%;
+        height: 150vh;
+        background: url(../images/Rutas\ background.jpg) no-repeat center;
+        background-size: cover;
+        align-items: center;
+        display: flex;
+    }
+    .info-ruta-content{
+        display: flex;
+        gap: 10.0rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .competencia{
+        margin: initial;
+    }
+    .arrow-icon{
+        text-align: initial;
+    }
+    /*======================= fin Mediaquerys de info rutas en 900px =================*/
+
+    /*====================== Mediaquerys de Rutas en 900px =======================*/
+    .rutas-content{
+        width: 100%;
+        height: 170vh;
+        background-color: #000;
+        margin: initial;
+    }
+    .rutas{
+        display: flex;
+        margin-top: 2.0rem;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 2.8rem;
+        margin-top: 4.0rem;
+        max-width: 70.0rem;
+        flex-wrap: wrap;
+    }
+    .ruta-title{
+        color: #fff;
+        font-size: 40px;
+        font-family: 'cross_boxed', sans-serif;
+        margin: 2.0rem 0;
+        max-width: 25.0rem;
+        text-align: start;
+    }
+    .rutas-head p{
+        color: #fff;
+        font-family: 'red_hat_text', sans-serif;
+        font-size: 20px;
+        max-width: 75.0rem;
+        margin: 0 auto;
+    }
+        /*======================= Fin Mediaquerys de Rutas en 900px =======================*/
+
+    /*======================= Mediaquerys de fechas en 900px =======================*/
+    .fechas{
+        height: 40vh;
+    }
+    /*======================= Mediaquerys de fechas en 900px =======================*/
+
+    /*======================== Mediaquerys de Premios en 900px ======================*/
+    .premios{
+        background: url(../images/Premios\ background.jpg) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 180vh;
+        margin: 0 auto;
+        display: flex;
+        text-align: center;
+    }
+    .premios-container{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 70.0rem;
+        margin: 0 auto;
+        justify-content: center; 
+        padding-bottom: 2.0rem;
+        margin-top: 2.0rem;
+    }
+    /*================= fin Mediaquerys de Premios en 900px =================*/
+
+    /*=================== Mediaquerys de paquetes en 900px =================*/
+    .paquetes-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .paquetes{
+        width: 100%;
+        height: 180vh;
+        background: #000;
+        margin: 0 auto;
+    }
+    /*====================== fin Mediaquerys de paquetes en 900px =================*/
+
+    /*======================== Mediaquerys de Jersey en 900px ======================*/
+    .content-jersey{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: initial;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .jersey{
+        margin: 0 auto;
+        background-color: #000;
+        width: 100%;
+        height: 130vh;
+    }
+    .conseguir{
+        font-size: 20px;
+        margin-top: 4.0rem;
+    }
+    /*========================= fin Mediaquerys de Jersey en 900px ==============================*/
+
+    /*========================== Mediaquerys de eventos en 900px ======================================*/
+    .eventos{
+        background-color: #000;
+        margin: 0 auto;
+        width: 100%;
+        height: 80%;
+        display: flex;
+    }
+    .eventos-content img{
+        margin-bottom: 5.0rem;
+    }
+    /*============================ fin Mediaquerys de eventos en 900px ============================*/
+
+    /*====================== Mediaquerys de hospedajes en 900px =======================*/
+    .hospedajes{
+        background-color: #000;
+        width: 100%;
+        height: 190vh;
+    }
+    .hospedajes h2{
+        text-align: center;
+        color: #fff;
+        margin-bottom: 3.0rem;
+        font-family: 'cross_boxed';
+        font-size: 5.0rem;
+        margin-top: 2.0rem;
+    }
+    .hospedajes_container{ /*===== Contenedor de todos los hospedajes =====*/
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        flex-direction: initial;
+        justify-content: center;
+        text-align: center;
+    }
+    .hospedaje-content a{
+        text-decoration: none;
+    }
+    .hospedaje-content h3{
+        color: #FFF;
+        font-family: 'red_hat_text', sans-serif;
+        font-size: 2.0rem;
+        margin-top: .9rem;
+    }
+    .hospedaje-content{
+        margin: 0 auto;
+        margin-bottom: 2.0rem;
+    }
+    /*========================== fin Mediaquerys de Hospedajes en 900px =======================*/
+
+    /*========================== Mediaquerys de inscripciones form en 900px =====================*/
+    .inscripciones-form{
+        height: 195vh;
+    }
+    .form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4.0rem;
+    }
+    .form-content{
+        margin: 0 auto;
+        display: initial;
+        justify-content: center;
+        margin-top: 2.0rem;
+        max-width: 66.5rem;
+    }
+    input{
+        width: initial;
+    }
+    input{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+    }
+    label{
+        display: flex;
+        margin-bottom: 1.0rem;
+    }
+    .form-space{
+        max-width: 100%;
+        margin-top: 2.0rem;
+    }
+    .form-space label{
+        margin-left: 3.0rem;
+    }
+    .paquetes-dropdown{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .input{
+        width: 850px;
+    }
+    .tallas-box{
+        margin-right: 17.1rem;
+    }
+    .form-inscrip-btn{
+        margin-top: 2.0rem;
+    }
+    .inscrip-submit{
+        padding: 2.3rem 13.0rem;
+        font-size: 20px;
+    }
+
+    /*========================== fin Mediaquerys de inscripciones form en 900px ==============*/
+
+    /*====================== Mediaquerys de contactanos form en 900px ====================*/
+    .contactanos{
+        height: 140vh;
+    }
+    .contact-form label{
+        margin-left: 3.0rem;
+    }
+    .quejas-sugerencias textarea{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .quejas-sugerencias label{
+        margin-left: 3.0rem;
+    }
+
+    /*======================= fin Mediaquerys de contactanos form en 900px =========================*/
+
+    /*====================== Mediaquerys de footer en 900px ====================*/
+    .footer-content{
+        padding: 0 8.0rem;
+    }
+    .contactos-footer p{
+        font-size: 18px;
+    }
+    /*====================== fin Mediaquerys de footer en 900px ====================*/
+}
+    /*======================///////// fin Mediaquerys en 900px ////////////====================*/
+
+    /*======================////////// Mediaquerys de 1440px ////////====================*/
+    @media screen and (min-width: 1440px) {
+    /*====================== Mediaquerys de Nvigation en 1440px ====================*/
+        .navigation{
+            padding: 0 24.0rem;
+        }
+        .nav-list a{
+            font-size: 2.0rem;
+        }
+    /*====================== fin Mediaquerys de Navigation en 1440px ====================*/
+
+    /*====================== Mediaquerys de Section banner-content en 1440px ====================*/
+        .content-banner{
+            height: 100vh;
+        }
+        .content h1{
+            font-size: 100px;
+            text-align: center;
+        }
+        .content p{
+            font-size: 40px;
+        }
+        .social-net{
+            margin-top: 16.0rem;
+        }
+        .bannerInfo-container{
+            margin-top: 25.0rem;
+        }
+        /*====================== Mediaquerys de banner-content en 1440px ====================*/
+
+    /*====================== Mediaquerys de all section en 1440px ====================*/
+        section{
+            height: 100vh;
+            width: 100%;
+        }
+        .container{
+            max-width: 144rem;
+            margin: 0 auto;
+            width: 100%;
+        }
+    /*====================== Mediaquerys de all section en 1440px ====================*/
+
+    /*====================== Mediaquerys de Sobre Nosotros en 1440px ====================*/
+        .sn-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        }
+        .image-sn{
+            margin-top: 2,0rem;
+            margin: 0 auto;
+            justify-content: initial;
+            width: 700px;
+            height: 828px;
+        }
+        .sobreNosotros-text{
+            max-width: 61.0rem;
+            margin-left: 2.0rem;
+            border: 3px solid #fff;
+            border-radius: 20px;
+            padding: 1.5rem ;
+            margin-top: initial;
+        }
+        .sobreNosotros p{
+            font-size: 26px;
+        }
+        .sobreNosotros{
+            align-items: center;
+            height: 130vh;
+        }
+    /*====================== fin Mediaquerys de Sobre Nosotros en 1440px ====================*/
+
+    /*====================== Mediaquerys de info-rut en 1440px ====================*/
+    .info-rut{
+        width: 100%;
+        height: 100vh;
+        background: url(../images/Rutas\ background.jpg) no-repeat center;
+        background-size: cover;
+        align-items: center;
+        display: flex;
+    }
+    .info-ruta-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: initial;
+        justify-content: center;
+        gap: 30.0rem;
+    }
+    /*====================== fin Mediaquerys de info-rut en 1440px ====================*/
+
+    /*====================== Mediaquerys de rutas en 1440px ====================*/
+    .rutas-content{
+        height: 110vh;
+    }
+    
+    .rutas{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2.0rem;
+        justify-content: center;
+        gap: 10.7rem;
+        align-items: center;
+        margin-top: 4.0rem;
+        max-width: initial;
+    }
+        /*====================== fin Mediaquerys de rutas en 1440px ====================*/
+
+    /*====================== Mediaquerys de Premios en 1440px ====================*/
+    .premios{
+        background: url(../images/Premios\ background.jpg) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 120vh;
+        margin: 0 auto;
+        display: flex;
+        text-align: center;
+    }
+    .premios-container{
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 100.0rem;
+        margin: 0 auto;
+        justify-content: center; 
+        padding-bottom: 2.0rem;
+        margin-top: 2.0rem;
+    }
+    .premio-box, .premio-box-2, .premio-box-3{
+        margin-bottom: 7.8rem;
+    }
+    /*====================== fin Mediaquerys de Premios en 1440px ====================*/
+
+    /*====================== Mediaquerys de Paquetes en 1440px ====================*/
+    .paquetes{
+        height: 130vh;
+    }
+    .paquetes-container{
+        margin-top: 3.0rem;
+    }
+    .paquetes-head{
+        margin-top: 3.0rem;
+    }
+
+    /*====================== Mediaquerys de Jersey en 1440px ====================*/
+    .jersey{
+        height: 110vh;
+    }
+    .content-jersey{
+        margin-top: 8.0rem;
+    }
+    .conseguir{
+        font-size: 2.0rem;
+        margin-top: 5.0rem;
+    }
+    /*====================== fin Mediaquerys de Jersey en 1440px ====================*/
+
+    /*====================== Mediaquerys de Eventos en 1440px ====================*/
+    .eventos{
+        height: 100%;
+    }
+    .eventos-content{
+        display: flex;
+        gap: 9.0rem;
+        max-width: 400rem;
+        flex-wrap: wrap;
+    }
+    /*====================== fin Mediaquerys de eventos en 1440px ====================*/
+
+    /*====================== Mediaquerys de Hospedajes en 1440px ====================*/
+    .hospedajes{
+        background-color: #000;
+        width: 100%;
+        height: 130vh;
+    }
+    .hospedajes h2{
+        text-align: center;
+        color: #fff;
+        margin-bottom: 3.0rem;
+        font-family: 'cross_boxed';
+        font-size: 5.0rem;
+        margin-top: 2.0rem;
+    }
+    .hospedajes_container{ /*===== Contenedor de todos los hospedajes =====*/
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        flex-direction: initial;
+        justify-content: center;
+        text-align: center;
+    }
+    .hospedaje-content a{
+        text-decoration: none;
+    }
+    .hospedaje-content h3{
+        color: #FFF;
+        font-family: 'red_hat_text', sans-serif;
+        font-size: 2.0rem;
+        margin-top: .9rem;
+    }
+    .hospedaje-content{
+        margin: 0 auto;
+        margin-bottom: 2.0rem;
+    }
+    /*====================== fin Mediaquerys de Hospedajes en 1440px ====================*/
+
+    /*====================== Mediaquerys de inscripciones form en 1440px ====================*/
+    .inscripciones-form{
+        height: 170vh;
+    }
+    .form-inscrip-btn{
+        margin-top: 5.0rem;
+    }
+    /*====================== fin Mediaquerys de inscripciones form en 1440px ====================*/
+    
+    /*====================== Mediaquerys de Contactanos en 1440px ====================*/
+        .contactanos{
+            height: 120vh;
+        }
+    /*====================== Mediaquerys de footer en 1440px ====================*/
+    .footer-content{
+        max-width: 144rem;
+        padding: 0 24.0rem;
+        margin-top: -12.0rem;
+    }
+    footer{
+        height: 50%;
+    }
+}
