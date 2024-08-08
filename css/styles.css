@@ -140,7 +140,7 @@ section{
 .content-banner{
     background: url(../images/Header\ Background.jpg) center no-repeat;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-size: cover;
     display: flex;
     text-align: center;
@@ -184,6 +184,7 @@ section{
 .social-net{
     text-align: center;
     margin-top: 10.0rem;
+    padding-bottom: 2.0rem;
 }
 
 .social-net a{
@@ -206,7 +207,7 @@ section{
 /*Styles of section sobreNosotros*/
 .sobreNosotros{
     width: 100%;
-    height: 160vh;
+    height: auto;
     background: url(../images/Sobre_Nosotros_Background.jpg) no-repeat center;
     background-size: cover;
 }
@@ -255,7 +256,7 @@ section{
     margin: 0 auto;
     background:url(../images/section_fechas_background.jpg) no-repeat center ;
     background-size: cover;
-    height: 40.0rem;
+    height: auto;
     text-align: center;
 }
 
@@ -271,18 +272,19 @@ section{
     font-family: 'red_hat_text', sans-serif;
 }
 .fechas-info{
-    margin-top: 3.0rem;
+    margin-top: 2.0rem;
 }
 .parrafo-fechas{
     color: #fff;
     margin: 0 auto;
-    margin-top: 3.0rem;
+    margin-top: 1.0rem;
     max-width: 40.0rem;
     font-family: 'red_hat_text', sans-serif;
     font-size:25px;
 }
-.button-inscription{
+.button-inscription-fechas{
     margin-top: 3.2rem;
+    padding-bottom: 2.0rem;
 }
 
 /*End of styles fechas*/
@@ -291,7 +293,7 @@ section{
 
 .info-rut{
     width: 100%;
-    height: 200vh;
+    height: auto;
     background: url(../images/Rutas\ background.jpg) no-repeat center;
     background-size: cover;
 }
@@ -334,7 +336,7 @@ section{
 /* styles Recorridos rutas */
 .rutas-content{
     width: 100%;
-    height: 240vh;
+    height: auto;
     background-color: #000;
     margin: 0 auto;
 }
@@ -379,6 +381,9 @@ section{
     font-family: 'cross_boxed', sans-serif;
     margin-top: 2.0rem;
 }
+.rutas{
+    padding-bottom: 2.0rem;
+}
 /* end of styles Recorridos rutas */
 
 /* Section Premios styles */
@@ -386,7 +391,7 @@ section{
     background: url(../images/Premios\ background.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
-    height: 280vh;
+    height: auto;
     margin: 0 auto;
     display: flex;
     text-align: center;
@@ -396,6 +401,10 @@ section{
     font-family: 'cross_boxed', sans-serif;
     font-size: 50px;
     margin-top: 2.0rem;
+}
+.button-inscription-premios{
+    margin-top: 3.0rem;
+    padding-bottom: 2.0rem;
 }
 
 /* styles hover premios */
@@ -694,7 +703,7 @@ section{
 /* styles of section paquetes */
 .paquetes{
     width: 100%;
-    height: 319vh;
+    height: auto;
     background: #000;
     margin: 0 auto;
 }
@@ -753,10 +762,10 @@ section{
     margin-bottom: 1.0rem;
 }
 .button-inscription-paquetes{
-    margin: 0 auto;
     margin-top: 2.0rem;
     display: flex;
     justify-content: center;
+    padding-bottom: 2.0rem;
 }
 /* end styles of section paquetes */
 
@@ -807,7 +816,7 @@ section{
     margin: 0 auto;
     background-color: #000;
     width: 100%;
-    height: 275vh;
+    height: auto;
 }
 .jersey h2{
     color: #FFF;
@@ -837,6 +846,7 @@ section{
     color: #FFF;
     font-family: 'red_hat_text', sans-serif;
     font-size: 1.3rem;
+    padding-bottom: 2.0rem;
 }
 /* end styles of section jersey */
 
@@ -846,7 +856,7 @@ section{
     background-color: #000;
     margin: 0 auto;
     width: 100%;
-    height: 290vh;
+    height: auto;
 }
 .eventos h2{
     color: #FFF;
@@ -871,7 +881,7 @@ section{
 .hospedajes{
     background-color: #000;
     width: 100%;
-    height: 320vh;
+    height: auto;
 }
 .hospedajes h2{
     text-align: center;
@@ -935,7 +945,7 @@ section{
 .inscripciones-form{
     margin: 0 auto;
     width: 100%;
-    height: 150vh;
+    height: auto;
     background: url(../images/Form\ inscription\ Background.jpg) no-repeat center;
     background-size: cover;
     display: flex;
@@ -1021,6 +1031,9 @@ option{
     justify-content: center;
     margin-top: 3.0rem;
 }
+.form-inscrip-btn{
+    padding-bottom: 2.0rem;
+}
 
 /*====================== Styles od Alert when the submit button is clicked ====================*/
 .titleAlert{
@@ -1046,7 +1059,7 @@ option{
     margin: 0 auto;
     background: #000;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 .contactanos h2{
     color: #FFF;
@@ -1084,6 +1097,9 @@ option{
     border-radius: 1.0rem;
     margin: 0 auto;
 }
+.btn-contactanos{
+    padding-bottom: 2.0rem;
+}
 /* End styles of section Contactanos */
 
 /* styles of Footer */
@@ -1092,7 +1108,7 @@ footer{
     background-color: #000;
     display: flex;
     border-top: 1px solid #FFF;
-    height: 36.0rem;
+    height: auto;
 }
 
 .logo-footer{
@@ -1185,7 +1201,7 @@ footer{
 
     /*=================== Mediaquerys de section banner content en 900px ==================*/
     .content-banner{
-        height: 100vh;
+        height: auto;
     }
     .content{
         margin-top:15.0rem;
@@ -1200,22 +1216,23 @@ footer{
     }
     .social-net{
         margin-top: 5.0rem;
+        padding-bottom: 2.0rem;
     }
     /*=================== fin Mediaquerys de section banner content en 900px ==================*/
 
     /*=================== Mediaquery de sobre Nosotros en 900px ===========================*/
     section{
         width: 100%;
-        height: 100vh;
     }
     .sobreNosotros{
-        height: 120vh;
+        height: auto;
     }
     .sn-content{
         display: flex;
         align-items: center;
         margin-top: 2.0rem;
         align-items: center;
+        padding-bottom: 2.0rem;
     }
     .image-sn{
         margin-top: 2,0rem;
@@ -1240,10 +1257,17 @@ footer{
         font-size: 20px;
     }
     /*===================== fin Mediaquerys de Sobre Nosotros en 900px ===============*/
+
+    /*===================== Mediaquerys de fechas en 900px ===============*/
+    .fechas{
+        height: auto;
+    }
+    /*===================== fin Mediaquerys de fechas en 900px ===============*/
+
     /*===================== Mediaquerys de Info rutas en 900px =======================*/
     .info-rut{
         width: 100%;
-        height: 150vh;
+        height: auto;
         background: url(../images/Rutas\ background.jpg) no-repeat center;
         background-size: cover;
         align-items: center;
@@ -1255,6 +1279,7 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        padding: 2.0rem;
     }
     .competencia{
         margin: initial;
@@ -1267,7 +1292,7 @@ footer{
     /*====================== Mediaquerys de Rutas en 900px =======================*/
     .rutas-content{
         width: 100%;
-        height: 240vh;
+        height: auto;
         background-color: #000;
         margin: initial;
     }
@@ -1300,7 +1325,7 @@ footer{
 
     /*======================= Mediaquerys de fechas en 900px =======================*/
     .fechas{
-        height: 50vh;
+        height: auto;
     }
     /*======================= Mediaquerys de fechas en 900px =======================*/
 
@@ -1309,7 +1334,7 @@ footer{
         background: url(../images/Premios\ background.jpg) no-repeat center;
         background-size: cover;
         width: 100%;
-        height: 180vh;
+        height: auto;
         margin: 0 auto;
         display: flex;
         text-align: center;
@@ -1332,7 +1357,7 @@ footer{
     }
     .paquetes{
         width: 100%;
-        height: 170vh;
+        height: auto;
         background: #000;
         margin: 0 auto;
     }
@@ -1350,7 +1375,7 @@ footer{
         margin: 0 auto;
         background-color: #000;
         width: 100%;
-        height: 130vh;
+        height: auto;
     }
     .conseguir{
         font-size: 20px;
@@ -1363,7 +1388,7 @@ footer{
         background-color: #000;
         margin: 0 auto;
         width: 100%;
-        height: 80%;
+        height: auto;
         display: flex;
     }
     .eventos-content img{
@@ -1375,7 +1400,7 @@ footer{
     .hospedajes{
         background-color: #000;
         width: 100%;
-        height: 190vh;
+        height: auto;
     }
     .hospedajes h2{
         text-align: center;
@@ -1409,7 +1434,7 @@ footer{
 
     /*========================== Mediaquerys de inscripciones form en 900px =====================*/
     .inscripciones-form{
-        height: 195vh;
+        height: auto;
     }
     .form-container{
     display: flex;
@@ -1465,7 +1490,7 @@ footer{
 
     /*====================== Mediaquerys de contactanos form en 900px ====================*/
     .contactanos{
-        height: 140vh;
+        height: auto;
     }
     .contact-form label{
         margin-left: 3.0rem;
@@ -1506,7 +1531,7 @@ footer{
 
     /*====================== Mediaquerys de Section banner-content en 1440px ====================*/
         .content-banner{
-            height: 100vh;
+            height: auto;
         }
         .content h1{
             font-size: 100px;
@@ -1518,6 +1543,7 @@ footer{
         }
         .social-net{
             margin-top: 15.0rem;
+            padding-bottom: 2.0rem;
         }
         .bannerInfo-container{
             margin-top: 25.0rem;
@@ -1529,7 +1555,7 @@ footer{
 
     /*====================== Mediaquerys de all section en 1440px ====================*/
         section{
-            height: 100vh;
+            height: auto;
             width: 100%;
         }
         .container{
@@ -1565,18 +1591,18 @@ footer{
         }
         .sobreNosotros{
             align-items: center;
-            height: 105vh;
+            height: auto;
         }
     /*====================== fin Mediaquerys de Sobre Nosotros en 1440px ====================*/
 
     /*====================== Mediaquerys de Fechas en 1440px ====================*/
         .fechas{
-            height: 35vh;
+            height: auto;
         }
     /*====================== Mediaquerys de info-rut en 1440px ====================*/
     .info-rut{
         width: 100%;
-        height: 60vh;
+        height: auto;
         background: url(../images/Rutas\ background.jpg) no-repeat center;
         background-size: cover;
         align-items: center;
@@ -1588,12 +1614,13 @@ footer{
         flex-wrap: initial;
         justify-content: center;
         gap: 30.0rem;
+        padding: 2.0rem 0;
     }
     /*====================== fin Mediaquerys de info-rut en 1440px ====================*/
 
     /*====================== Mediaquerys de rutas en 1440px ====================*/
     .rutas-content{
-        height: 90vh;
+        height: auto;
     }
     
     .rutas{
@@ -1613,7 +1640,7 @@ footer{
         background: url(../images/Premios\ background.jpg) no-repeat center;
         background-size: cover;
         width: 100%;
-        height: 100vh;
+        height: auto;
         margin: 0 auto;
         display: flex;
         text-align: center;
@@ -1631,11 +1658,14 @@ footer{
     .premio-box, .premio-box-2, .premio-box-3{
         margin-bottom: 7.8rem;
     }
+    .button-inscription-premios{
+        padding-bottom: 2.0rem;
+    }
     /*====================== fin Mediaquerys de Premios en 1440px ====================*/
 
     /*====================== Mediaquerys de Paquetes en 1440px ====================*/
     .paquetes{
-        height: 110vh;
+        height: auto;
     }
     .paquetes-container{
         margin-top: 3.0rem;
@@ -1643,10 +1673,13 @@ footer{
     .paquetes-head{
         margin-top: 3.0rem;
     }
+    .button-inscription-paquetes{
+        padding-bottom: 2.0rem;
+    }
 
     /*====================== Mediaquerys de Jersey en 1440px ====================*/
     .jersey{
-        height: 90vh;
+        height: auto;
     }
     .content-jersey{
         margin-top: 8.0rem;
@@ -1659,7 +1692,7 @@ footer{
 
     /*====================== Mediaquerys de Eventos en 1440px ====================*/
     .eventos{
-        height: 100vh;
+        height: auto;
     }
     .eventos-content{
         display: flex;
@@ -1707,7 +1740,7 @@ footer{
 
     /*====================== Mediaquerys de inscripciones form en 1440px ====================*/
     .inscripciones-form{
-        height: 140vh;
+        height: auto;
     }
     .form-inscrip-btn{
         margin-top: 5.0rem;
