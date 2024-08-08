@@ -1514,12 +1514,16 @@ footer{
         }
         .content p{
             font-size: 40px;
+            margin-top: 5.0rem;
         }
         .social-net{
-            margin-top: 16.0rem;
+            margin-top: 15.0rem;
         }
         .bannerInfo-container{
             margin-top: 25.0rem;
+        }
+        .btn-banner{
+            margin-top: 9.0rem;
         }
         /*====================== Mediaquerys de banner-content en 1440px ====================*/
 
@@ -1561,14 +1565,18 @@ footer{
         }
         .sobreNosotros{
             align-items: center;
-            height: 130vh;
+            height: 105vh;
         }
     /*====================== fin Mediaquerys de Sobre Nosotros en 1440px ====================*/
 
+    /*====================== Mediaquerys de Fechas en 1440px ====================*/
+        .fechas{
+            height: 35vh;
+        }
     /*====================== Mediaquerys de info-rut en 1440px ====================*/
     .info-rut{
         width: 100%;
-        height: 100vh;
+        height: 60vh;
         background: url(../images/Rutas\ background.jpg) no-repeat center;
         background-size: cover;
         align-items: center;
@@ -1585,7 +1593,7 @@ footer{
 
     /*====================== Mediaquerys de rutas en 1440px ====================*/
     .rutas-content{
-        height: 110vh;
+        height: 90vh;
     }
     
     .rutas{
@@ -1605,7 +1613,7 @@ footer{
         background: url(../images/Premios\ background.jpg) no-repeat center;
         background-size: cover;
         width: 100%;
-        height: 120vh;
+        height: 100vh;
         margin: 0 auto;
         display: flex;
         text-align: center;
@@ -1627,7 +1635,7 @@ footer{
 
     /*====================== Mediaquerys de Paquetes en 1440px ====================*/
     .paquetes{
-        height: 130vh;
+        height: 110vh;
     }
     .paquetes-container{
         margin-top: 3.0rem;
@@ -1638,7 +1646,7 @@ footer{
 
     /*====================== Mediaquerys de Jersey en 1440px ====================*/
     .jersey{
-        height: 110vh;
+        height: 90vh;
     }
     .content-jersey{
         margin-top: 8.0rem;
@@ -1651,7 +1659,7 @@ footer{
 
     /*====================== Mediaquerys de Eventos en 1440px ====================*/
     .eventos{
-        height: 100%;
+        height: 100vh;
     }
     .eventos-content{
         display: flex;
@@ -1665,7 +1673,7 @@ footer{
     .hospedajes{
         background-color: #000;
         width: 100%;
-        height: 130vh;
+        height: 100vh;
     }
     .hospedajes h2{
         text-align: center;
@@ -1699,7 +1707,7 @@ footer{
 
     /*====================== Mediaquerys de inscripciones form en 1440px ====================*/
     .inscripciones-form{
-        height: 170vh;
+        height: 140vh;
     }
     .form-inscrip-btn{
         margin-top: 5.0rem;
@@ -1708,7 +1716,7 @@ footer{
     
     /*====================== Mediaquerys de Contactanos en 1440px ====================*/
         .contactanos{
-            height: 120vh;
+            height: 100vh;
         }
     /*====================== Mediaquerys de footer en 1440px ====================*/
     .footer-content{
