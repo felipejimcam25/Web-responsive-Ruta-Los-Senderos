@@ -1706,7 +1706,7 @@ footer{
     .hospedajes{
         background-color: #000;
         width: 100%;
-        height: 100vh;
+        height: auto;
     }
     .hospedajes h2{
         text-align: center;
