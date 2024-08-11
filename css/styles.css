@@ -31,6 +31,10 @@
     font-size: 10px;
     scroll-behavior: smooth;
 }
+section{
+    padding-bottom: 5.0rem;
+    overflow: hidden;
+}
 
 .container{
     width: 100%;
@@ -47,7 +51,7 @@ header{
 
 
 
-/* navigation class styles */
+/*======================= navigation class styles ==============================*/
 .navigation{
     width: 100%;
     top:0;
@@ -75,10 +79,11 @@ header{
     text-decoration: none;
     color: #fff;
     font-family: 'red_hat_text', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     transition: .5s;
 }
-/* nav styles and hamburger menu styles */
+
+/*=================== nav styles and hamburger menu styles =========================*/
 .nav{
     width: 60%;
     height: 100vh;
@@ -94,6 +99,8 @@ header{
     background-color: #000;
     padding: 5rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    transition: 1s;
+    text-align: end;
 }
 
 .close{
@@ -129,13 +136,9 @@ header{
 .nav-list a:hover{
     color: #FF0000;
 }
-/* End of the nav styles and hamburguer menu */
+/*============================== End of the nav styles and hamburguer menu ===================*/
 
-/* Styles of section content */
-
-section{
-    overflow: hidden;
-}
+/*================================== Styles of section content ====================================*/
 
 .content-banner{
     background: url(../images/Header\ Background.jpg) center no-repeat;
@@ -160,9 +163,9 @@ section{
     font-size: 30px;
     margin-bottom: 6.6rem;
 }
-/* end Styles of section content*/
+/*============================== end Styles of section content ===============================*/
 
-/*Styles of button inscribete Ya!*/
+/*=================== Styles of button inscribete Ya! =======================*/
 .inscrip-btn{
     background-color: #FF0000;
     padding: 15px 50px;
@@ -171,16 +174,16 @@ section{
     text-decoration: none;
     color: #fff;
     font-family: 'red_hat_text', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     transition: .4s;
 }
 .inscrip-btn:hover{
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, .25);
     background: linear-gradient(180deg, #ff0000 7.78%, #000 141.12%);
 }
-/* end Styles of button inscribete Ya!*/
+/*================================= end Styles of button inscribete Ya! =======================*/
 
-/*Styles of Social Network icons and text*/
+/*====================== Styles of Social Network icons and text =====================*/
 .social-net{
     text-align: center;
     margin-top: 10.0rem;
@@ -202,9 +205,9 @@ section{
     font-size: 12px;
     font-family: 'zt_talk';
 }
-/* end Styles of Social network icons and text*/
+/*=========================== end Styles of Social network icons and text ============================*/
 
-/*Styles of section sobreNosotros*/
+/*=============================== Styles of section sobreNosotros ================================*/
 .sobreNosotros{
     width: 100%;
     height: auto;
@@ -231,7 +234,6 @@ section{
     justify-content: center;
     object-fit: cover;
     border-radius: 10px;
-    /* margin: 2.0rem 0; */
 }
 .image-sn img{
     margin: 2.0rem 0;
@@ -250,7 +252,10 @@ section{
     font-size: 15px;
     text-align: center;
 }
-/*Styles fechas*/
+/*=============================== end Styles of section sobreNosotros ================================*/
+
+
+/*========================================= Styles fechas =====================================*/
 
 .fechas{
     margin: 0 auto;
@@ -287,9 +292,9 @@ section{
     padding-bottom: 2.0rem;
 }
 
-/*End of styles fechas*/
+/*================================ End of styles fechas ====================*/
 
-/* styles .info-ru */
+/*================================ styles .info-ru ========================*/
 
 .info-rut{
     width: 100%;
@@ -313,27 +318,27 @@ section{
 .title-rut{
     color: #fff;
     font-family: 'zt_talk';
-    font-size: 32px;
+    font-size: 35px;
 }
 .nombre-comp{
     color: #fff;
     font-family: 'zt_talk';
-    font-size: 32px;
+    font-size: 25px;
     max-width: 30.0rem;
 }
 .comp-km{
     color: #fff;
     font-family: 'zt_talk';
-    font-size: 32px;
+    font-size: 25px;
 }
 .comp-date{
     color: #fff;
     font-family: 'zt_talk';
-    font-size: 32px;
+    font-size: 25px;
 }
-/* end of styles .info-ru */
+/*========================== end of styles .info-ru =============================*/
 
-/* styles Recorridos rutas */
+/*=========================== styles Recorridos rutas =============================*/
 .rutas-content{
     width: 100%;
     height: auto;
@@ -384,9 +389,9 @@ section{
 .rutas{
     padding-bottom: 2.0rem;
 }
-/* end of styles Recorridos rutas */
+/*============================ end of styles Recorridos rutas ==========================*/
 
-/* Section Premios styles */
+/*================================ Section Premios styles ========================*/
 .premios{
     background: url(../images/Premios\ background.jpg) no-repeat center;
     background-size: cover;
@@ -407,8 +412,9 @@ section{
     padding-bottom: 2.0rem;
 }
 
-/* styles hover premios */
-/*hover premio-box-1 hover*/
+/*================================= styles hover premios =======================*/
+
+/* hover premio-box-1 hover */
 .premio-box{
     width: 30.0rem;
     height: 30.0rem;
@@ -457,9 +463,10 @@ section{
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
-/*End hover premio-box-1*/
-/*premio-box-2 hover*/
-.premio-box-2{
+/* End hover premio-box-1 */
+
+/* premio-box-2 hover */
+.premio-box-2{ 
     width: 30.0rem;
     height: 30.0rem;
     background-color: #000;
@@ -507,7 +514,8 @@ section{
     opacity: 1;
 }
 /* end premio-box-2 hover */
-/*premio-box-3 hover*/
+
+/* premio-box-3 hover */
 .premio-box-3{
     width: 30.0rem;
     height: 30.0rem;
@@ -554,8 +562,9 @@ section{
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
-/*end premio-box-3 hover*/
-/*premio-box-4 hover*/
+/* end premio-box-3 hover */
+
+/* premio-box-4 hover */
 .premio-box-4{
     width: 30.0rem;
     height: 30.0rem;
@@ -602,8 +611,9 @@ section{
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
-/*end premio-box-4 hover*/
-/*premio-box-5 hover*/
+/* end premio-box-4 hover */
+
+/* premio-box-5 hover */
 .premio-box-5{
     width: 30.0rem;
     height: 30.0rem;
@@ -650,8 +660,9 @@ section{
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
-/*end premio-box-5 hover*/
+/* end premio-box-5 hover */
 
+/* premio-box-6 hover*/
 .premio-box-6{
     width: 30.0rem;
     height: 30.0rem;
@@ -698,9 +709,12 @@ section{
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }  
-/*End premio-box-5 hover*/
+/*End premio-box-6 hover*/
+/*================================= styles hover premios =======================*/
 
-/* styles of section paquetes */
+/*================================ Section Premios styles ========================*/
+
+/*================================= styles of section paquetes ============================*/
 .paquetes{
     width: 100%;
     height: auto;
@@ -767,12 +781,12 @@ section{
     justify-content: center;
     padding-bottom: 2.0rem;
 }
-/* end styles of section paquetes */
+/*============================ end styles of section paquetes =================================*/
 
-/* styles of section patrocinadores */
+/*============================ styles of section patrocinadores =======================*/
 .patrocinadores{
     background-color: #1f1f1f;
-    height: 40vh;
+    height: auto;
 }
 .slider-patrocinadores{
     width: 75%;
@@ -797,7 +811,7 @@ section{
     width: 19.5rem;
 }
 .slider-patrocinadores .slide img{
-    width: 100%;
+    width: 150px;
     object-fit: cover;
 }
 
@@ -809,9 +823,9 @@ section{
         transform: translateX(calc(-19.5rem * 7));
     }
 }
-/* end styles of section patrocinadores */
+/*======================== end styles of section patrocinadores ========================*/
 
-/* styles of section jersey */
+/*========================== styles of section jersey ============================*/
 .jersey{
     margin: 0 auto;
     background-color: #000;
@@ -848,15 +862,18 @@ section{
     font-size: 1.3rem;
     padding-bottom: 2.0rem;
 }
-/* end styles of section jersey */
+/*========================== end styles of section jersey ==============================*/
 
-/* styles of section eventos */
+/*========================== styles of section eventos =============================*/
 
 .eventos{
     background-color: #000;
     margin: 0 auto;
     width: 100%;
     height: auto;
+}
+.eventos-container{
+    margin-top: 13.0rem;
 }
 .eventos h2{
     color: #FFF;
@@ -875,9 +892,13 @@ section{
     width: 350px;
     height: 650px;
 }
-/* end styles of section eventos */
+.btn-eventos{
+    display: flex;
+    justify-content: center;
+}
+/*============================== end styles of section eventos ============================*/
 
-/* styles of section hospedajes and Hover */
+/*================================ styles of section hospedajes and Hover ====================*/
 .hospedajes{
     background-color: #000;
     width: 100%;
@@ -939,9 +960,9 @@ section{
     opacity: 1;
     visibility: visible;
 }
-/* end styles of section hospedajes */
+/*========================== end styles of section hospedajes ===========================*/
 
-/* styles of section inscription form */
+/*========================= styles of section inscription form ===========================*/
 .inscripciones-form{
     margin: 0 auto;
     width: 100%;
@@ -1050,16 +1071,17 @@ option{
     font-size: 2.0rem;
     font-family: 'red_hat_text', sans-serif;
 }
-/*====================== end Styles od Alert when the submit button is clicked ====================*/
+/*====================== end Styles of Alert when the submit button is clicked ====================*/
 
-/* end styles of section Inscription form */
+/*=================================== end styles of section Inscription form ==================================*/
 
-/* styles of section Contactanos */
+/*================================== styles of section Contactanos =======================*/
 .contactanos{
     margin: 0 auto;
     background: #000;
     width: 100%;
     height: auto;
+    padding-bottom: 10.0rem;
 }
 .contactanos h2{
     color: #FFF;
@@ -1098,17 +1120,18 @@ option{
     margin: 0 auto;
 }
 .btn-contactanos{
-    padding-bottom: 2.0rem;
+    padding-bottom: 5.0rem;
 }
-/* End styles of section Contactanos */
+/*================================== End styles of section Contactanos ==================================*/
 
-/* styles of Footer */
+/*================================= styles of Footer =============================================*/
 footer{
     margin: 0 auto;
     background-color: #000;
     display: flex;
     border-top: 1px solid #FFF;
     height: auto;
+    padding-bottom: 2.0rem;
 }
 
 .logo-footer{
@@ -1149,8 +1172,9 @@ footer{
     font-size: 15px;
     font-family: 'red_hat_text', sans-serif;
 }
+/*================================= end styles of Footer =============================================*/
 
-
+/*===================///////////// Media query 900px ////////////====================*/
 @media screen and (min-width: 900px) {
     .container{
         width: 100%;
@@ -1174,8 +1198,6 @@ footer{
         height: initial;
         top: initial;
         left: 0;
-        padding: 0 8.0rem;
-
     }
     .nav{
         position: initial;
@@ -1447,13 +1469,12 @@ footer{
         display: initial;
         justify-content: center;
         margin-top: 2.0rem;
-        max-width: 66.5rem;
     }
     input{
         width: initial;
     }
     input{
-        width: 95%;
+        width: 60%;
         display: flex;
         justify-content: center;
     }
@@ -1461,12 +1482,13 @@ footer{
         display: flex;
         margin-bottom: 1.0rem;
     }
+    .form-space label{
+        position: relative;
+        left: 20%;
+    }
     .form-space{
         max-width: 100%;
         margin-top: 2.0rem;
-    }
-    .form-space label{
-        margin-left: 3.0rem;
     }
     .paquetes-dropdown{
         width: 100%;
@@ -1518,6 +1540,7 @@ footer{
 }
     /*======================///////// fin Mediaquerys en 900px ////////////====================*/
 
+    
     /*======================////////// Mediaquerys de 1440px ////////====================*/
     @media screen and (min-width: 1440px) {
     /*====================== Mediaquerys de Nvigation en 1440px ====================*/

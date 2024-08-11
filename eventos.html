@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta Los Senderos</title>
+    <!-- link de cdn font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- link de archivo css  -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- link favicon -->
+    <link rel="icon" href="Logos/logo ruta de los senderos negro.svg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navigation">
+
+                            <!-- inicio del logo -->
+                <a href="#inicio" class="logo"><img src="Logos/LOGO TRAILS ROUTE BLANCO.svg" alt="Logo Ruta Los Senderos"></a>
+                            <!-- Fin del logo -->
+
+                            <!-- inicio botones de menu Hamburguesa para tamaño movíl -->
+                <button class="open" id="open"> <i class="fas fa-bars"></i></button>
+                
+                        <!-- Fin botones de menu Hamburguesa para tamaño movíl -->
+
+                        <!-- Inicio de nav list -->
+                <nav class="nav" id="nav">
+                            <!-- boton que cierra el menu hamburguesa -->
+                    <div class="close-btn">
+                        <button class="close" id="close"><i class="fas fa-times"></i></button>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#sobre_nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#rutas">Rutas</a></li>
+                        <li><a href="#inscripciones">Inscripciones</a></li>
+                        <li><a href="#contactanos">Contáctanos</a></li>
+                    </ul>
+                </nav>
+                <!-- Fin de nav list -->
+            </div> 
+            <!-- end of .navigation -->
+    </header>
+                <!--======================= section eventos ============================-->
+                <section class="eventos">
+                    <div class="container">
+                        <div class="eventos-container">
+                            <h2>Eventos</h2>
+                            <div class="eventos-content">
+                                <img src="Eventos images/EVENTO VIERNES.png" alt="Evento de viernes 23 de agosto">
+                                <img src="Eventos images/Evento Sabado.png" alt="Evento de sabado 24 de agosto">
+                                <img src="Eventos images/EVENTO DOMINGO.png" alt="Evento de domingo 25 de agosto">
+                            </div>
+                            <div class="btn-eventos"><a class="inscrip-btn" href="https://www.specialticket.net/" target="_blank">¡Comprar Ahora!</a></div>
+                        </div>
+                    </div>
+                </section>
+                <!--==================================== end section Eventos =================================-->
+                <!-- footer -->
+                <footer>
+                    <div class="container">
+                        <div class="footer-content">
+                        <div class="social-net social-footer">
+                            <a href="#"><i class="fa-brands fa-facebook"></i><span class="sn-text">Facebook</span></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i><span class="sn-text">Instagram</span></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i><span class="sn-text">Whatsapp</span></a>
+                        </div>
+                        <div class="logo-footer">
+                                <a href="#inicio"><img src="Logos/LOGO TRAILS ROUTE BLANCO.svg" alt="Logo trails route footer"></a>
+                        </div>
+                        <div class="contactos-footer">
+                            <p>Tel:2546-0000</p>
+                            <p>Email: traisroute@gmail.com</p>
+                            <p>Ubicación: San Marcos, Tarrazú, Costa Rica.</p>
+                        </div>
+                        <div class="copyright">
+                            <p>&#169 Copyright Trails Route, all rights reserved</p>
+                        </div>
+                        <div class="logo-dev">
+                            <img src="Logos/logo Felipe Jimenez.svg" alt="Developer Logo">
+                            <p>Created by Felipe.dev</p>
+                        </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end footer -->
+
+
+    <!--=============================== Archivo javascript para menu Hamburguesa ===============================-->
+    <script src="js/main.js"></script>
+    <!--=============================== Archivo javascript de cdn sweetaler2 para alerta de exito en inscripcion ===============================-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+    <script src="js/Alert.js"></script>
+</body>
+</html>
