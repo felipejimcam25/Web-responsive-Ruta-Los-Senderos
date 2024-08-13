@@ -1181,6 +1181,9 @@ footer{
         margin: 0 auto;
         max-width: 122.5rem;
     }
+    header{
+        width: 100%;
+    }
     /*=============================== Mediaquerys de navigation en 900px =====================*/
     .nav-list{
         position: initial;
@@ -1229,12 +1232,11 @@ footer{
         margin-top:15.0rem;
     }
     .content h1{
-        font-size: 100px;
+        font-size: 60px;
         margin-bottom: .9rem;
     }
     .content p{
         font-size: 40px;
-        margin-bottom: rem;
     }
     .social-net{
         margin-top: 5.0rem;
@@ -1261,7 +1263,7 @@ footer{
         margin: 0 auto;
         justify-content: initial;
         width: 500px;
-        height: 600px;
+        height: 650px;
         /* margin-bottom: 2.0rem; */
     }
     .image-sn img{
@@ -1274,6 +1276,7 @@ footer{
         border-radius: 20px;
         padding: 1.5rem ;
         margin-top: initial;
+        margin-left: 1.0rem;
     }
     .sobreNosotros p{
         font-size: 20px;
