@@ -68,18 +68,20 @@ header{
 .nav-list{
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     justify-content: space-between;
+    margin-top: 2.0rem;
 }
 .nav-list li{
     border-bottom: 2px solid #fff;
+    width: 100%;
 }
 
 .nav-list a{
     text-decoration: none;
     color: #fff;
     font-family: 'red_hat_text', sans-serif;
-    font-size: 17px;
+    font-size: 20px;
     transition: .5s;
 }
 
@@ -131,7 +133,7 @@ header{
 
 .nav-list{
     flex-direction: column;
-    align-items: start;
+    text-align: start;
 }
 .nav-list a:hover{
     color: #FF0000;
@@ -1560,6 +1562,7 @@ footer{
     /*====================== Mediaquerys de Section banner-content en 1440px ====================*/
         .content-banner{
             height: auto;
+            width: 100%;
         }
         .content h1{
             font-size: 100px;
