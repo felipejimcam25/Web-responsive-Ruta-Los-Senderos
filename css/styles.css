@@ -1204,6 +1204,24 @@ footer{
         top: initial;
         left: 0;
     }
+    .nav-list li{
+        border-bottom: 2px solid #fff;
+        width: initial;
+    }
+    .nav-list{
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        margin-top: initial;
+    }
+    .nav-list a{
+        text-decoration: none;
+        color: #fff;
+        font-family: 'red_hat_text', sans-serif;
+        font-size: 17px;
+        transition: .5s;
+    }
     .nav{
         position: initial;
         visibility: visible;
@@ -1556,6 +1574,8 @@ footer{
         }
         .nav-list a{
             font-size: 2.0rem;
+            gap: initial;
+            margin-top: initial;
         }
     /*====================== fin Mediaquerys de Navigation en 1440px ====================*/
 
