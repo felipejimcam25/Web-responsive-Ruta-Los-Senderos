@@ -962,6 +962,11 @@ header{
     opacity: 1;
     visibility: visible;
 }
+.red-text{
+    color: #F00;
+    font-family: 'red_hat_text', sans-serif;
+    font-size: 2.0rem;
+}
 /*========================== end styles of section hospedajes ===========================*/
 
 /*========================= styles of section inscription form ===========================*/
