@@ -69,6 +69,8 @@ header{
     list-style: none;
     display: flex;
     gap: 5rem;
+    column-gap: 5rem;
+    row-gap: 2rem;
     justify-content: space-between;
     margin-top: 2.0rem;
 }
@@ -1223,7 +1225,7 @@ footer{
     .nav-list{
         list-style: none;
         display: flex;
-        gap: 2rem;
+        gap: 3rem;
         justify-content: space-between;
         margin-top: initial;
     }
@@ -1494,10 +1496,10 @@ footer{
         height: auto;
     }
     .form-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 4.0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 4.0rem;
     }
     .form-content{
         margin: 0 auto;
@@ -1635,7 +1637,7 @@ footer{
         align-items: center;
         }
         .image-sn{
-            margin-top: 2,0rem;
+            margin-top: 2.0rem;
             margin: 0 auto;
             justify-content: initial;
             width: 700px;
