@@ -409,6 +409,13 @@ header{
     font-size: 50px;
     margin-top: 2.0rem;
 }
+.aviso-hover{
+    text-align: center;
+    color: #FFF;
+    font-size: 1.5rem;
+    margin: 1.0rem 0;
+    font-family: 'red_hat_text', sans-serif;
+}
 .button-inscription-premios{
     margin-top: 3.0rem;
     padding-bottom: 2.0rem;
@@ -1716,6 +1723,9 @@ footer{
     }
     .button-inscription-premios{
         padding-bottom: 2.0rem;
+    }
+    .aviso-hover{
+        display: none;
     }
     /*====================== fin Mediaquerys de Premios en 1440px ====================*/
 
