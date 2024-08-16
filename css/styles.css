@@ -1817,7 +1817,7 @@ footer{
     
     /*====================== Mediaquerys de Contactanos en 1440px ====================*/
         .contactanos{
-            height: 100vh;
+            height: auto;
         }
     /*====================== Mediaquerys de footer en 1440px ====================*/
     .footer-content{
