@@ -83,7 +83,7 @@ header{
     text-decoration: none;
     color: #fff;
     font-family: 'red_hat_text', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     transition: .5s;
 }
 
@@ -289,7 +289,7 @@ header{
     margin-top: 1.0rem;
     max-width: 40.0rem;
     font-family: 'red_hat_text', sans-serif;
-    font-size:25px;
+    font-size: 25px;
 }
 .button-inscription-fechas{
     margin-top: 3.2rem;
@@ -807,7 +807,7 @@ header{
 }
 .slider-patrocinadores h2{
     color: #FFF;
-    font-size: 5.0rem;
+    font-size: 3.0rem;
     font-family: 'red_hat_text',sans-serif;
     text-align: start;
 }
@@ -1394,6 +1394,9 @@ footer{
         margin: 0 auto;
         display: flex;
         text-align: center;
+    }
+    .aviso-hover{
+        display: none;
     }
     .premios-container{
         display: flex;
