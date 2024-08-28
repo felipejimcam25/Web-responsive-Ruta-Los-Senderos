@@ -1589,7 +1589,6 @@ footer{
         }
         .nav-list a{
             font-size: 2.0rem;
-            gap: initial;
             gap: 1.5rem;
             margin-top: initial;
         }
